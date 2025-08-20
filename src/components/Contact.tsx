@@ -64,7 +64,7 @@ const Contact = () => {
                   <Button 
                     variant="outline" 
                     className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    onClick={() => window.open('#')}
+                    onClick={() => window.open('https://github.com/sarnav98/')}
                   >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
@@ -73,7 +73,7 @@ const Contact = () => {
                   <Button 
                     variant="outline" 
                     className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    onClick={() => window.open('#')}
+                    onClick={() => window.open('https://www.linkedin.com/in/sarnav-dutta/')}
                   >
                     <Linkedin className="mr-2 h-4 w-4" />
                     LinkedIn
