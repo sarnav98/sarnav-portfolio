@@ -1,2 +1,5 @@
+name = "sarnav-portfolio"
+
 [build]
 command = "npm install && npm run build"
+pages_build_output_dir = "./dist"
