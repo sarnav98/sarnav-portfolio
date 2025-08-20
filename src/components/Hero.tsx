@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { calculateExperienceYears } from "@/lib/experience";
 
@@ -36,28 +36,45 @@ const Hero = () => {
             Delivering high-quality solutions that reduce manual effort by 70%.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4 pt-6">
-            <a href="mailto:sarnavdutta2011@gmail.com">
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
-              </Button>
-            </a>
+          <div className="flex flex-col items-center gap-4 pt-6">
+            {/* First row: Contact Me and View Projects */}
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="mailto:sarnavdutta2011@gmail.com">
+                <Button 
+                  variant="default" 
+                  size="lg" 
+                  className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Contact Me
+                </Button>
+              </a>
+              
+              <a href="https://github.com/sarnav98" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                >
+                  <Github className="mr-2 h-5 w-5" />
+                  View Projects
+                </Button>
+              </a>
+            </div>
             
-            <a href="https://github.com/sarnav98" target="_blank" rel="noopener noreferrer">
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-              >
-                <Github className="mr-2 h-5 w-5" />
-                View Projects
-              </Button>
-            </a>
+            {/* Second row: Resume button centered */}
+            <div className="flex justify-center">
+              <a href="https://drive.google.com/file/d/1-gFqIqdxnzU0paJl-Z2xmqDEyv52EsCh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="secondary" 
+                  size="lg"
+                  className="bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                >
+                  <FileText className="mr-2 h-5 w-5" />
+                  Resume
+                </Button>
+              </a>
+            </div>
           </div>
           
           <div className="flex justify-center space-x-6 pt-8">
@@ -75,12 +92,16 @@ const Hero = () => {
             </a>
             <a 
               href="https://github.com/sarnav98" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="h-6 w-6" />
             </a>
             <a 
               href="https://www.linkedin.com/in/sarnav-dutta/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Linkedin className="h-6 w-6" />
