@@ -43,7 +43,7 @@ const Hero = () => {
                 <Button 
                   variant="default" 
                   size="lg" 
-                  className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
+                  className="bg-gradient-primary hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Contact Me
@@ -54,7 +54,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
                 >
                   <Github className="mr-2 h-5 w-5" />
                   View Projects
@@ -64,11 +64,14 @@ const Hero = () => {
             
             {/* Second row: Resume button centered */}
             <div className="flex justify-center">
-              <a href="https://drive.google.com/file/d/1-gFqIqdxnzU0paJl-Z2xmqDEyv52EsCh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://drive.google.com/file/d/1-gFqIqdxnzU0paJl-Z2xmqDEyv52EsCh/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 <Button 
-                  variant="secondary" 
                   size="lg"
-                  className="bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  className="bg-white text-black hover:bg-yellow-400 hover:text-black hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
                 >
                   <FileText className="mr-2 h-5 w-5" />
                   Resume
