@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Calendar } from "lucide-react";
+import { Building2, Calendar, GraduationCap } from "lucide-react";
 import { calculateExperienceYears } from "@/lib/experience";
 
 const experiences = [
@@ -131,6 +131,52 @@ const Experience = () => {
               </CardContent>
             </Card>
           ))}
+          
+          {/* Education Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-foreground mb-4">
+                <span className="text-primary">Education</span>
+              </h3>
+              <div className="h-1 w-16 bg-gradient-primary rounded-full mx-auto"></div>
+            </div>
+            
+            <Card className="bg-card shadow-card border-border hover:shadow-yellow transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary flex items-center gap-2">
+                  <GraduationCap className="h-5 w-5" />
+                  Education
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Bachelor of Technology in Information Technology
+                  </h4>
+                  <p className="text-muted-foreground mb-1">
+                    Techno India Saltlake
+                  </p>
+                  <p className="text-muted-foreground mb-1">
+                    Maulana Abul Kalam Azad University of Technology
+                  </p>
+                  <p className="text-primary font-medium">2017 – 2021</p>
+                  <p className="text-sm text-muted-foreground mt-2">Kolkata, India</p>
+                </div>
+                
+                <div className="pt-4 border-t border-border">
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Professional Certification
+                  </h4>
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground">CS50x from Harvard University</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    under David J. Malan
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
