@@ -145,7 +145,7 @@ const Contact = () => {
               
               <div className="pt-4 border-t border-border">
                 <p className="text-muted-foreground text-sm">
-                  Available for full-time opportunities, contract work, and consulting projects. 
+                  Available for full-time opportunities only. 
                   Let's discuss how I can help automate your testing processes and improve your software quality.
                 </p>
               </div>
