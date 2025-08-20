@@ -37,23 +37,27 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 pt-6">
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Me
-            </Button>
+            <a href="mailto:sarnavdutta2011@gmail.com">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Me
+              </Button>
+            </a>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
-              <Github className="mr-2 h-5 w-5" />
-              View Projects
-            </Button>
+            <a href="https://github.com/sarnav98" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View Projects
+              </Button>
+            </a>
           </div>
           
           <div className="flex justify-center space-x-6 pt-8">
@@ -70,13 +74,13 @@ const Hero = () => {
               <Mail className="h-6 w-6" />
             </a>
             <a 
-              href="#" 
+              href="https://github.com/sarnav98" 
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/sarnav-dutta/" 
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Linkedin className="h-6 w-6" />
