@@ -119,25 +119,6 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
-        
-        <Card className="bg-gradient-hero shadow-card border-border text-center">
-          <CardContent className="py-12">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Ready to Build Something Amazing?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              I specialize in creating robust automation frameworks that reduce manual effort 
-              and improve test coverage. Let's discuss how I can help your team.
-            </p>
-            <Button 
-              size="lg"
-              className="bg-gradient-primary hover:shadow-yellow transition-all duration-300"
-              onClick={() => window.open('mailto:sarnavdutta2011@gmail.com?subject=Project Discussion')}
-            >
-              Start a Conversation
-            </Button>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );

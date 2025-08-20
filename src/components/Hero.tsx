@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { calculateExperienceYears } from "@/lib/experience";
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            4+ years of experience building scalable automation frameworks using 
+            {calculateExperienceYears()}+ years of experience building scalable automation frameworks using 
             <span className="text-primary"> Selenium, Java, TestNG, and Cucumber</span>. 
             Delivering high-quality solutions that reduce manual effort by 70%.
           </p>
